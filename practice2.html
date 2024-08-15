@@ -13,10 +13,29 @@
             <h2>Job Application Form</h2>
             <form action="  ">
                 <div class="realform">
-                    <p>First Name</p>
-                    <input type="text" placeholder="Enter First Name">
-                    <p>Last Name</p>
-                    <input type="text" placeholder="Enter Last Name">
+                    <div class="formcontrol">
+                    <label for="fn">First Name</label>
+                    <input type="text" id="fn" placeholder="Enter First Name">
+                    </div>
+                    <div class="formcontrol">
+                    <label for="ln">Last Name</label>
+                    <input type="text" id="ln" placeholder="Enter Last Name">
+                    </div>
+                    <div class="formcontrol">
+                        <label for ="em">Email</label>
+                        <input type="Email" id="em" placeholder="Enter Email">
+                    </div>
+                    <div class="formcontrol">
+                        <label for="job_role"> Job Role </label>
+                        <select id="job_role" name="job_role">
+                          <option value="">Select Job Role</option>
+                          <option value="frontend">Frontend Developer</option>
+                          <option value="backend">Backend Developer</option>
+                          <option value="full_stack">Full Stack Developer</option>
+                          <option value="ui_ux">UI UX Designer</option>
+                        </select>
+                    </div>
+                    
                 </div>
             </form>
         </div>
