@@ -26,11 +26,41 @@ body{
 }
 .realform{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit , minmax(200px,1fr));
     grid-gap: 25px;
-    
 }
 .formcontrol{
     display: flex;
-    flex-direction: column;
+    flex-direction: column
+}
+.formcontrol label{
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+input,
+textarea,
+select{
+    padding: 4px 8px 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+}
+input,select,textarea:focus{
+    outline-color: rebeccapurple;
+}
+.apply{
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    background-color: red;
+    padding: 10px;
+    border: transparent;
+    color: white;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: black;
+    border: 1px solid black;
+    cursor: pointer;
 }
